@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopWebsite.ae — Crafted for UAE Leaders</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#075985',
+                            800: '#0c4a6e',
+                            900: '#0f172a'
+                        },
+                        uae: {
+                            green: '#007a3d',
+                            red: '#ff0000',
+                            black: '#000000'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        arabic: ['Cairo', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar and ambient glowing effects */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0369a1;
+            border-radius: 4px;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px rgba(2, 132, 199, 0.25);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen selection:bg-brand-500 selection:text-white">
+
+    <div class="bg-gradient-to-r from-slate-900 via-brand-800 to-slate-900 text-slate-200 text-xs sm:text-sm py-2.5 px-4 text-center border-b border-white/10 sticky top-0 z-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                <i class="fa-solid fa-check-circle mr-1"></i> Full Package Only 1,500 AED
+            </span>
+            <span class="font-medium text-slate-300">Dual Language (Arabic & English) Included</span>
+            <a href="https://wa.me/971504525447?text=Hello%20Mr.Jasraj%20Muttar,%20I%20would%20like%20to%20inquire%20about%20the%201500%20AED%20Website%20Package." target="_blank" class="text-brand-100 font-bold hover:underline flex items-center gap-1 ml-2">
+                Chat on WhatsApp <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+            </a>
+        </div>
+    </div>
+
+    <nav class="border-b border-slate-800 bg-slate-950/80 backdrop-blur-lg sticky top-[37px] z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo with UAE Badge -->
+                <div class="flex items-center space-x-3">
+                    <a href="#" class="flex items-center gap-3 group">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-700 to-sky-400 p-0.5 shadow-lg group-hover:scale-105 transition-transform duration-300">
+                            <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                                <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M50 15C35 15 25 25 25 38C25 55 50 50 50 68C50 78 38 82 28 75" stroke="#38bdf8" stroke-width="12" stroke-linecap="round"/>
+                                    <path d="M30 25L70 25" stroke="#38bdf8" stroke-width="8" stroke-linecap="round"/>
+                                    <circle cx="70" cy="70" r="10" fill="#10b981"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-1.5">
+                                <span class="text-xl font-black tracking-tight text-white">ShopWebsite<span class="text-sky-400">.ae</span></span>
+                                <!-- UAE Flag Badge -->
+                                <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-800 text-slate-300 border border-slate-700">
+                                    🇦🇪 UAE
+                                </span>
+                            </div>
+                            <p class="text-xs text-slate-400 font-medium">By Mr.Jasraj Muttar</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                    <a href="#services" class="hover:text-sky-400 transition-colors">Services</a>
+                    <a href="#pricing" class="hover:text-sky-400 transition-colors">Price Calculator</a>
+                    <a href="#portfolio" class="hover:text-sky-400 transition-colors">Showcase</a>
+                    <a href="#about" class="hover:text-sky-400 transition-colors">About Developer</a>
+                </div>
+
+                <!-- Action Button -->
+                <div class="flex items-center space-x-4">
+                    <a href="https://wa.me/971504525447?text=Hello%20Mr.Jasraj%20Muttar,%20I%20am%20interested%20in%20building%20a%20website." target="_blank" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold shadow-lg shadow-emerald-900/30 transition-all flex items-center gap-2 text-sm">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>+971 50 452 5447</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative overflow-hidden py-20 lg:py-28 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(14,165,233,0.15),rgba(255,255,255,0))]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-sm font-semibold">
+                        <i class="fa-solid fa-crown text-amber-400"></i>
+                        <span>Crafted for UAE leaders & high-growth businesses</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+                        Elevate Your Online Presence in the <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 via-emerald-400 to-teal-300">United Arab Emirates</span>
+                    </h1>
+
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        High-performance digital web solutions engineered specifically for UAE businesses, government entities, and market leaders. Crafted by lead developer <strong class="text-white font-semibold">Mr.Jasraj Muttar</strong>.
+                    </p>
+
+                    <!-- Key Value Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 max-w-xl mx-auto lg:mx-0 text-left">
+                        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <div class="text-2xl font-bold text-sky-400">1,500 AED</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Complete Package Total</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <div class="text-2xl font-bold text-emerald-400">Dual Lang</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Arabic + English Built-in</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <div class="text-2xl font-bold text-amber-400">UAE Native</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Direct Local Support</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Group -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                        <a href="#pricing" class="px-8 py-4 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-bold text-base shadow-xl shadow-sky-600/25 transition-all text-center">
+                            Calculate Project Estimate
+                        </a>
+                        <a href="https://wa.me/971504525447?text=Hello%20Mr.Jasraj%20Muttar,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" class="px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold text-base transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i>
+                            <span>Direct Consultation</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-sky-500 to-emerald-500 opacity-30 blur-2xl"></div>
+                        <div class="relative glass-card p-8 rounded-3xl border border-slate-700/60 shadow-2xl text-center space-y-6">
+                            
+                            <!-- Large Inline Vector Logo -->
+                            <div class="w-24 h-24 mx-auto rounded-2xl bg-slate-900 border border-slate-700 flex items-center justify-center p-3 shadow-inner">
+                                <svg width="70" height="70" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M50 15C35 15 25 25 25 38C25 55 50 50 50 68C50 78 38 82 28 75" stroke="#38bdf8" stroke-width="10" stroke-linecap="round"/>
+                                    <path d="M30 25L70 25" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+                                    <circle cx="70" cy="70" r="10" fill="#10b981"/>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h3 class="text-2xl font-black text-white">ShopWebsite<span class="text-sky-400">.ae</span></h3>
+                                <p class="text-sm text-slate-400 mt-1">Primary Agency Branding & Web Solutions</p>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 text-left space-y-2 text-xs">
+                                <div class="flex justify-between items-center text-slate-300">
+                                    <span>Lead Architect:</span>
+                                    <strong class="text-white">Mr.Jasraj Muttar</strong>
+                                </div>
+                                <div class="flex justify-between items-center text-slate-300">
+                                    <span>Location:</span>
+                                    <strong class="text-white">United Arab Emirates 🇦🇪</strong>
+                                </div>
+                                <div class="flex justify-between items-center text-slate-300">
+                                    <span>Standard Delivery Package:</span>
+                                    <strong class="text-emerald-400">1,500 AED Total</strong>
+                                </div>
+                                <div class="flex justify-between items-center text-slate-300">
+                                    <span>Languages:</span>
+                                    <strong class="text-sky-400">English + Arabic RTL</strong>
+                                </div>
+                            </div>
+
+                            <div class="pt-2">
+                                <a href="https://wa.me/971504525447?text=Hello%20Mr.Jasraj%20Muttar,%20I%20am%20ready%20to%20start%20my%20website." target="_blank" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm block transition-all shadow-lg shadow-emerald-900/40">
+                                    Order Full 1,500 AED Package
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-slate-900/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-bold text-sky-400 tracking-widest uppercase">Expert Capabilities</h2>
+                <h3 class="text-3xl sm:text-4xl font-black text-white">Solutions Built for UAE Business Excellence</h3>
+                <p class="text-slate-400 text-sm sm:text-base">Designed and maintained directly by <strong class="text-slate-200">Mr.Jasraj Muttar</strong> to ensure your digital presence is modern, responsive, and secure.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="p-8 rounded-2xl glass-card border border-slate-800 hover:border-sky-500/40 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Corporate Business Websites</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Sleek, responsive corporate sites optimized for UAE company profiles, service presentations, and corporate identity.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="p-8 rounded-2xl glass-card border border-slate-800 hover:border-emerald-500/40 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Arabic & English Dual Language</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Full bilingual integration with right-to-left (RTL) Arabic styling tailored specifically for the GCC and UAE market.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="p-8 rounded-2xl glass-card border border-slate-800 hover:border-amber-500/40 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Instant Lead Capture Systems</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Direct conversion tools connected directly to WhatsApp, email notifications, and mobile inquiry channels.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-bold text-emerald-400 tracking-widest uppercase">Transparent Pricing</h2>
+                <h3 class="text-3xl sm:text-4xl font-black text-white">Interactive Project Cost Estimator</h3>
+                <p class="text-slate-400 text-sm sm:text-base">Customize your exact project requirement or select our recommended complete package.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto glass-card rounded-3xl border border-slate-800 p-6 sm:p-10 shadow-2xl">
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    
+                    <!-- Options Selection -->
+                    <div class="space-y-6">
+                        <h4 class="text-lg font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-sliders text-sky-400"></i> Select Package Components
+                        </h4>
+
+                        <!-- Base Package Item -->
+                        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between">
+                            <div>
+                                <h5 class="text-sm font-bold text-white">Core Business Web Structure</h5>
+                                <p class="text-xs text-slate-400">Mobile-responsive design, hosting setup</p>
+                            </div>
+                            <span class="text-sm font-bold text-sky-400">800 AED</span>
+                        </div>
+
+                        <!-- Dual Language Option (500 AED) -->
+                        <div class="p-4 rounded-xl bg-emerald-950/40 border border-emerald-500/40 flex items-center justify-between">
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <h5 class="text-sm font-bold text-white">Arabic + English Dual Language</h5>
+                                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/20 text-emerald-400">Popular</span>
+                                </div>
+                                <p class="text-xs text-slate-400">Native RTL Arabic + LTR English toggle</p>
+                            </div>
+                            <span class="text-sm font-bold text-emerald-400">500 AED</span>
+                        </div>
+
+                        <!-- Lead Capture & Integration -->
+                        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between">
+                            <div>
+                                <h5 class="text-sm font-bold text-white">Instant WhatsApp Lead System</h5>
+                                <p class="text-xs text-slate-400">Direct booking buttons & lead forms</p>
+                            </div>
+                            <span class="text-sm font-bold text-sky-400">200 AED</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Total Cost & Checkout Callout -->
+                    <div class="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between space-y-6">
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Estimated Total</span>
+                            <div class="flex items-baseline gap-2 mt-2">
+                                <span class="text-4xl font-black text-white">1,500</span>
+                                <span class="text-xl font-bold text-emerald-400">AED</span>
+                            </div>
+                            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                                Includes all core setup, dual-language capabilities, responsive mobile layouts, and direct WhatsApp contact setup.
+                            </p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="text-xs text-slate-300 space-y-1">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-400"></i> No hidden recurring platform fees
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-400"></i> Dedicated Support by Mr.Jasraj Muttar
+                                </div>
+                            </div>
+
+                            <a href="https://wa.me/971504525447?text=Hello%20Mr.Jasraj%20Muttar,%20I%20want%20to%20proceed%20with%20the%201500%20AED%20Website%20Package." target="_blank" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-center block transition-all shadow-lg shadow-emerald-900/40">
+                                Order Package on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-20 bg-slate-900/30 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-bold text-sky-400 tracking-widest uppercase">Work Showcase</h2>
+                <h3 class="text-3xl sm:text-4xl font-black text-white">Designed for UAE Excellence</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Showcase Item 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 hover:border-sky-500/30 transition-all">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center text-slate-600 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-950 to-brand-900 opacity-90"></div>
+                        <i class="fa-solid fa-building-columns text-5xl text-sky-400/40 relative z-10"></i>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-white mb-2">Executive Business Portal</h4>
+                        <p class="text-xs text-slate-400 mb-4">Clean corporate profile with bilingual support and inquiry routing.</p>
+                        <span class="text-xs font-semibold text-sky-400">Designed by Mr.Jasraj Muttar</span>
+                    </div>
+                </div>
+
+                <!-- Showcase Item 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 hover:border-emerald-500/30 transition-all">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center text-slate-600 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-950 to-emerald-950 opacity-90"></div>
+                        <i class="fa-solid fa-layer-group text-5xl text-emerald-400/40 relative z-10"></i>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-white mb-2">Interactive Service Catalog</h4>
+                        <p class="text-xs text-slate-400 mb-4">Structured showcase tailored for commercial service providers in the UAE.</p>
+                        <span class="text-xs font-semibold text-emerald-400">Designed by Mr.Jasraj Muttar</span>
+                    </div>
+                </div>
+
+                <!-- Showcase Item 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-500/30 transition-all">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center text-slate-600 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-950 to-amber-950 opacity-90"></div>
+                        <i class="fa-solid fa-calendar-check text-5xl text-amber-400/40 relative z-10"></i>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-white mb-2">Appointment & Inquiry System</h4>
+                        <p class="text-xs text-slate-400 mb-4">Fast-loading landing page with direct WhatsApp appointment booking.</p>
+                        <span class="text-xs font-semibold text-amber-400">Designed by Mr.Jasraj Muttar</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-slate-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 border border-slate-800 text-center space-y-6">
+                <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-sky-500 to-emerald-500 p-1 shadow-xl">
+                    <div class="w-full h-full bg-slate-950 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                        JM
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-2xl font-black text-white">Mr.Jasraj Muttar</h3>
+                    <p class="text-sm font-semibold text-sky-400">Lead Web Architect & Developer — ShopWebsite.ae</p>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed max-w-2xl mx-auto">
+                    Dedicated to providing top-tier web solutions for businesses and leaders across the United Arab Emirates. Every project is crafted with care, modern code standards, and responsive design.
+                </p>
+                <div class="pt-4 flex justify-center gap-4">
+                    <a href="https://wa.me/971504525447?text=Hello%20Mr.Jasraj%20Muttar," target="_blank" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-bold transition-all flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Contact Directly
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-800 bg-slate-950 py-12 text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <span class="text-base font-bold text-white">ShopWebsite<span class="text-sky-400">.ae</span></span>
+                <span>•</span>
+                <span>Developed by <strong>Mr.Jasraj Muttar</strong></span>
+            </div>
+            <div>
+                <span>© 2026 ShopWebsite.ae — United Arab Emirates 🇦🇪</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
